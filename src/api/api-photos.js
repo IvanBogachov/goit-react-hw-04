@@ -2,7 +2,6 @@ import axios from "axios";
 
 //Application ID 662627
 //Access Key YBzUbl2tTOkfgdGM9JSmQG1eK-anAa2YLCXfIO0kRZE
-//Secret key TDLTj6b9jJFWzv_lYfHXPAwhzYHdN4cTQnZ8GykTOQ8
 
 const ACCESS_KEY = "YBzUbl2tTOkfgdGM9JSmQG1eK-anAa2YLCXfIO0kRZE";
 

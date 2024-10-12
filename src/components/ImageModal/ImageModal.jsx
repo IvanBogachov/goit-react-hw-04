@@ -9,6 +9,7 @@ const ImageModal = ({ modalIsOpen, closeModal, src, alt }) => {
       onRequestClose={closeModal}
       className={styles.modal}
       overlayClassName={styles.overlay}
+      appElement={document.getElementById("root")}
     >
       <button onClick={closeModal} className={styles.modalBtn}>
         close

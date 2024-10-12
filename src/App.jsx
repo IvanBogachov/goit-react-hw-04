@@ -64,7 +64,7 @@ function App() {
     setPage(page + 1);
   };
 
-  const isActive = useMemo(() => page === totalPages, [page, totalPages]);
+  const isActive = useMemo(() => page < totalPages, [page, totalPages]);
 
   const openModal = () => {
     setIsOpen(true);
@@ -91,8 +91,8 @@ function App() {
       )}
       {isLoading && <Loader />}
       {isError && <ErrorMessage />}
-      {gallery.length > 0 && !isLoading && !isError && (
-        <LoadMoreBtn handleLoadMore={handleLoadMore} isActive={isActive} />
+      {gallery.length > 0 && !isLoading && !isError && isActive && (
+        <LoadMoreBtn handleLoadMore={handleLoadMore} />
       )}
       <ImageModal
         modalIsOpen={modalIsOpen}
