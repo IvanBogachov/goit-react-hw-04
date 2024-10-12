@@ -9,7 +9,7 @@
 
 .cardDescription {
   color: white;
-  margin: 0;
-  padding-block: 1em;
-  padding-inline: 1em;
+  margin: 0 auto;
+  padding-block: 10px;
+  padding-inline: 10px;
 }

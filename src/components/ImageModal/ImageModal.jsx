@@ -12,7 +12,7 @@ const ImageModal = ({ modalIsOpen, closeModal, src, alt }) => {
       appElement={document.getElementById("root")}
     >
       <button onClick={closeModal} className={styles.modalBtn}>
-        close
+        ❌
       </button>
       <div>
         <img className={styles.modalImg} src={src} alt={alt} />
